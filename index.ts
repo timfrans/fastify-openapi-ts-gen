@@ -1,6 +1,6 @@
 import { initFastify } from "./initFastify";
 import fastify from "fastify";
-// import { components } from "./types";
+import { components } from "./types";
 
 const server = fastify();
 
@@ -13,6 +13,9 @@ initFastify(server).then((server) =>
   })
 );
 
-// const customerResponse: components["schemas"]["Customer"] = {
-//   role: "mhsdgf",
-// };
+const customer: components["schemas"]["Customer"] = {
+  role: "employee",
+  age: 10,
+  id: "abc",
+  name: "jos",
+};
